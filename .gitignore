@@ -1,0 +1,48 @@
+# Ignore local dev only files
+
+vendor/*
+log/*
+tmp/**/*
+public/system/*
+coverage/
+spec/tmp/*
+.bundle
+db/*.sqlite3
+config/database.yml
+.env
+rerun.txt
+tags
+vim/.netrwhist
+zeus.json
+
+# Ignore compilation junk
+
+*.rbc
+*.sassc
+.sass-cache
+capybara-*.html
+*.sw[nop]
+.rspec
+**.orig
+rerun.txt
+pickle-email-*.html
+
+# Ignore filesystem trash
+
+*.DS_Store
+.DS_Store?
+
+# Specifically include these things
+
+!bin/.libs/libjpeg.so
+!bin/.libs/libjpeg.so.8
+!bin/.libs/libjpeg.so.8.4.0
+!bin/cdjpeg.o
+!bin/jpegtran
+!bin/jpegtran.o
+!bin/pngcrush
+!bin/rdswitch.o
+!bin/transupp.o
+
+!log/.gitkeep
+!tmp/cache/.gitkeep

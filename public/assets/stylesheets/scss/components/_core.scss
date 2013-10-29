@@ -1,0 +1,69 @@
+* {
+  @include box-sizing(border-box !important);
+}
+
+%basepad {
+  width: 90%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+////////////////////////////////////////////////////////////////////////
+// GENERIC CLASSES
+////////////////////////////////////////////////////////////////////////
+
+// Convenience class for hiding elements
+
+.hidden {
+  display: none;
+}
+
+// Hide only visually, but have it available for screenreaders
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  &.focusable:active,
+  &.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+}
+
+// Clearfix this container
+
+.clearfix {
+  @include clearfix;
+}
+
+// Disable user text selection for this container
+
+.noselect {
+  @include user-select(none);
+  -webkit-touch-callout: none;
+  cursor: default;
+}
+
+html {
+  background: #fefefe;
+  height: 100%;
+  margin-bottom: 1px;
+}
+
+body {
+  @extend %helvetica;
+  font-size: 16px;
+  line-height: 1.33;
+}
+

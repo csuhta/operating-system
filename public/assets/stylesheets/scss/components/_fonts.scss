@@ -1,0 +1,12 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:400,700);
+
+$josefin: "Josefin Slab", monospace;
+$helvetica: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+%helvetica {
+  font-family: $helvetica;
+}
+
+%josefin {
+  font-family: $josefin;
+}

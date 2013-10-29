@@ -1,0 +1,80 @@
+.metadata {
+
+  @extend .clearfix;
+
+  background: #4D4645;
+  padding: 20px 0 0 0;
+  color: $cRose;
+  text-shadow: 0px 1px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.4) inset;
+
+  p {
+    @extend %basepad;
+    margin-bottom: 1em;
+  }
+
+  h3 {
+
+    border-bottom: 2px solid #fefefe;
+    border-top: 2px solid $cRed;
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 auto 1em auto;
+    padding: 160px 6% 10px 6%;
+    max-width: 710px;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.95);
+
+    background-position: bottom center;
+    background-repeat: no-repeat;
+
+    &.joe {
+      background-image: url(/assets/images/joe.jpg);
+    }
+
+    &.amy {
+      background-image: url(/assets/images/joe.jpg);
+    }
+
+  }
+
+}
+
+.showtimes {
+
+  a, a:link, a:visited,
+  a:hover, a:active {
+
+    @include clearfix;
+
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 5% 10px 5%;
+    max-width: 450px;
+    margin: 0 auto;
+
+    &:nth-child(odd) {
+      background: #605958;
+    }
+
+  }
+
+  b {
+    float: left;
+  }
+
+  span {
+    float: right;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-shadow: none;
+    background: rgba(0,0,0,0.5);
+    border-left: 1px dashed #605958;
+    border-right: 1px dashed #605958;
+    padding: 4px 6px 4px 5px;
+    border-radius: 2px;
+  }
+
+}

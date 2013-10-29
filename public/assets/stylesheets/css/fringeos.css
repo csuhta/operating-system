@@ -1,0 +1,304 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:400,700);
+a, abbr, acronym, address, applet, article, aside,
+b, big, blockquote, body,
+canvas, caption, cite, code,
+dd, del, details, dfn, div, dl, dt,
+em, fieldset, figcaption, figure, font, footer, form,
+h1, h2, h3, h4, h5, h6, header, html,
+i, iframe, img, input, ins,
+kbd, label, legend, li,
+main, menu, nav, object, ol, p, pre, q,
+s, samp, section, small, span, strike, strong, sub, summary, sup,
+table, tbody, td, tfoot, th, thead, tr, tt,
+ul, var {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-decoration: none;
+  vertical-align: baseline; }
+
+button, input, option,
+select, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  background: none;
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  vertical-align: middle; }
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  -webkit-appearance: none; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, td, th {
+  text-align: left;
+  font-weight: normal; }
+
+blockquote, q {
+  quotes: none; }
+  blockquote:after, blockquote:before, q:after, q:before {
+    content: "";
+    content: none; }
+
+article, aside, canvas, details,
+figcaption, figure, footer,
+header, hgroup, main, menu, nav,
+section, summary {
+  display: block; }
+
+address, caption, cite,
+code, dfn, th, var {
+  font-style: normal;
+  font-weight: normal;
+  text-align: left; }
+
+:focus {
+  outline: 0; }
+
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+
+h1, .chartly h2 {
+  font-family: "Josefin Slab", monospace; }
+
+* {
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important; }
+
+h1, .tagline, .metadata p, .chartly h2, .chartly p {
+  width: 90%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.hidden {
+  display: none; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+  .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto; }
+
+.clearfix, .metadata {
+  *zoom: 1; }
+  .clearfix:before, .metadata:before, .clearfix:after, .metadata:after {
+    content: " ";
+    display: table; }
+  .clearfix:after, .metadata:after {
+    clear: both; }
+
+.noselect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  cursor: default; }
+
+html {
+  background: #fefefe;
+  height: 100%;
+  margin-bottom: 1px; }
+
+body {
+  font-size: 16px;
+  line-height: 1.33; }
+
+.header {
+  color: #fefefe;
+  background: #da5758;
+  padding: 15px 0 15px 0;
+  text-shadow: 0px 1px 0px rgba(90, 82, 81, 0.9); }
+
+h1 {
+  font-size: 35px;
+  line-height: 1.1;
+  text-align: center; }
+
+.tagline {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-top: 1px dashed #ddd;
+  padding: 10px 5% 0 5%;
+  margin-top: 10px;
+  width: 80%; }
+
+.phone {
+  width: 100%;
+  border-top: 3px solid #f6f4f4;
+  border-bottom: 3px solid #f6f4f4;
+  margin-bottom: -5px; }
+
+.metadata {
+  background: #4D4645;
+  padding: 20px 0 0 0;
+  color: #e3cccc;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4) inset; }
+  .metadata p {
+    margin-bottom: 1em; }
+  .metadata h3 {
+    border-bottom: 2px solid #fefefe;
+    border-top: 2px solid #da5758;
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 auto 1em auto;
+    padding: 160px 6% 10px 6%;
+    max-width: 710px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.95);
+    background-position: bottom center;
+    background-repeat: no-repeat; }
+    .metadata h3.joe {
+      background-image: url(/assets/images/joe.jpg); }
+    .metadata h3.amy {
+      background-image: url(/assets/images/joe.jpg); }
+
+.showtimes a, .showtimes a:link, .showtimes a:visited,
+.showtimes a:hover, .showtimes a:active {
+  *zoom: 1;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 10px 5% 10px 5%;
+  max-width: 450px;
+  margin: 0 auto; }
+  .showtimes a:before, .showtimes a:after, .showtimes a:link:before, .showtimes a:link:after, .showtimes a:visited:before, .showtimes a:visited:after,
+  .showtimes a:hover:before,
+  .showtimes a:hover:after, .showtimes a:active:before, .showtimes a:active:after {
+    content: " ";
+    display: table; }
+  .showtimes a:after, .showtimes a:link:after, .showtimes a:visited:after,
+  .showtimes a:hover:after, .showtimes a:active:after {
+    clear: both; }
+  .showtimes a:nth-child(odd), .showtimes a:link:nth-child(odd), .showtimes a:visited:nth-child(odd),
+  .showtimes a:hover:nth-child(odd), .showtimes a:active:nth-child(odd) {
+    background: #605958; }
+.showtimes b {
+  float: left; }
+.showtimes span {
+  float: right;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-shadow: none;
+  background: rgba(0, 0, 0, 0.5);
+  border-left: 1px dashed #605958;
+  border-right: 1px dashed #605958;
+  padding: 4px 6px 4px 5px;
+  border-radius: 2px; }
+
+.chartly {
+  color: #333;
+  background: url(/assets/images/paper.png);
+  padding: 20px 0 20px 0;
+  text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.5); }
+  .chartly h2 {
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 0.5em;
+    border-bottom: 3px double #da5758; }
+  .chartly p {
+    display: block;
+    width: 90%;
+    margin: 0 auto 1em auto; }
+  .chartly img {
+    display: block;
+    width: 90%;
+    margin: 0 auto; }
+  .chartly a, .chartly a:link, .chartly a:visited,
+  .chartly a:hover, .chartly a:active {
+    *zoom: 1;
+    display: block;
+    color: #000;
+    padding: 10px 5% 10px 5%;
+    max-width: 450px;
+    margin: 0 auto;
+    color: black;
+    text-shadow: none;
+    background: rgba(218, 87, 88, 0.35); }
+    .chartly a:before, .chartly a:after, .chartly a:link:before, .chartly a:link:after, .chartly a:visited:before, .chartly a:visited:after,
+    .chartly a:hover:before,
+    .chartly a:hover:after, .chartly a:active:before, .chartly a:active:after {
+      content: " ";
+      display: table; }
+    .chartly a:after, .chartly a:link:after, .chartly a:visited:after,
+    .chartly a:hover:after, .chartly a:active:after {
+      clear: both; }
+    .chartly a:nth-child(even), .chartly a:link:nth-child(even), .chartly a:visited:nth-child(even),
+    .chartly a:hover:nth-child(even), .chartly a:active:nth-child(even) {
+      background: rgba(218, 87, 88, 0.25); }
+    .chartly a:last-of-type, .chartly a:link:last-of-type, .chartly a:visited:last-of-type,
+    .chartly a:hover:last-of-type, .chartly a:active:last-of-type {
+      margin-bottom: 1em; }
+    .chartly a span, .chartly a:link span, .chartly a:visited span,
+    .chartly a:hover span, .chartly a:active span {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-top: 2px; }
+    .chartly a b, .chartly a:link b, .chartly a:visited b,
+    .chartly a:hover b, .chartly a:active b {
+      float: left;
+      font-size: 35px;
+      line-height: 1;
+      margin-right: 15px; }
+
+.fringe {
+  color: #fff;
+  padding-bottom: 100px;
+  background: #121212;
+  background-size: 105px;
+  padding: 15px 5% 15px 5%;
+  text-align: center; }
+  .fringe a, .fringe a:link, .fringe a:visited,
+  .fringe a:hover, .fringe a:active {
+    display: block;
+    color: #fff;
+    text-align: center; }
+  .fringe img {
+    display: block;
+    margin: 15px auto 25px auto; }
