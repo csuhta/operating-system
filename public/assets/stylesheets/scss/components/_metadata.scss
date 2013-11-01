@@ -11,6 +11,13 @@
   p {
     @extend %basepad;
     margin-bottom: 1em;
+
+    a:link, a:visited,
+    a:hover, a:active, {
+      color: #fefefe;
+      border-bottom: 1px dotted #bbb;
+    }
+
   }
 
   h3 {
@@ -23,7 +30,7 @@
     font-weight: 500;
     margin: 0 auto 1em auto;
     padding: 160px 6% 10px 6%;
-    max-width: 710px;
+    max-width: 600px;
     text-shadow: 1px 1px 0px rgba(0,0,0,0.95);
 
     background-position: bottom center;
@@ -43,6 +50,8 @@
 
 .showtimes {
 
+  margin: 15px auto 15px auto;
+
   a, a:link, a:visited,
   a:hover, a:active {
 
@@ -52,11 +61,16 @@
     color: #fff;
     text-align: center;
     padding: 10px 5% 10px 5%;
-    max-width: 450px;
+    max-width: 600px;
     margin: 0 auto;
+    background: #393433;
 
     &:nth-child(odd) {
       background: #605958;
+      span {
+        border-left-color: #605958;
+        border-right-color: #605958;
+      }
     }
 
   }
@@ -71,9 +85,9 @@
     text-transform: uppercase;
     text-shadow: none;
     background: rgba(0,0,0,0.5);
-    border-left: 1px dashed #605958;
-    border-right: 1px dashed #605958;
-    padding: 4px 6px 4px 5px;
+    border-left: 1px dashed #393433;
+    border-right: 1px dashed #393433;
+    padding: 4px 8px 4px 8px;
     border-radius: 2px;
   }
 

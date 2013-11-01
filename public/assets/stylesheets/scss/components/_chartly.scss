@@ -1,8 +1,8 @@
 .chartly {
 
   color: #333;
-  background: url(/assets/images/paper.png);
-  padding: 20px 0 20px 0;
+  background: url(/assets/images/paper.png) -300px -300px;
+  padding: 20px 0 5px 0;
   text-shadow: -1px -1px 0px rgba(255,255,255,0.5);
 
   h2 {
@@ -12,6 +12,12 @@
     color: #000;
     margin-bottom: 0.5em;
     border-bottom: 3px double $cRed;
+  }
+
+  h3 {
+    @extend %basepad;
+    font-weight: bold;
+    margin-bottom: 1em;
   }
 
   p {
@@ -24,7 +30,27 @@
   img {
     display: block;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
+    max-width: 600px;
+  }
+
+  i {
+    font-style: italic;
+    font-size: 16px;
+  }
+
+  ul {
+    margin-bottom: 1em;
+  }
+
+  li {
+    @extend %basepad;
+    width: 80%;
+    list-style: square outside;
+  }
+
+  li + li {
+    margin-top: 0.25em;
   }
 
   a, a:link, a:visited,
@@ -35,7 +61,7 @@
     display: block;
     color: #000;
     padding: 10px 5% 10px 5%;
-    max-width: 450px;
+    max-width: 600px;
     margin: 0 auto;
     color: black;
     text-shadow: none;

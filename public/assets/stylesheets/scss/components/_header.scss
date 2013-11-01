@@ -27,9 +27,11 @@ h1 {
 }
 
 .phone {
+  display: block;
   width: 100%;
   border-top: 3px solid $cWhite;
   border-bottom: 3px solid $cWhite;
-  margin-bottom: -5px;
+  margin: 0 auto 0px auto;
+  max-width: 900px;
 }
 
