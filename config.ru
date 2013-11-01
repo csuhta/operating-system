@@ -4,7 +4,8 @@ STDOUT.sync = true
 
 use Rack::Deflater # Use gzip
 use Rack::Head # Answer HEAD requests
-use Rack::ForceDomain, ENV["EXPECTED_HOSTNAME"] # Force users onto the correct domain name
+use Rack::ETag # Set ETags for content
+use Rack::ForceDomain, ENV["EXPECTED_HOSTNAME"] # Force users onto the offical domain name
 
 use Rack::Static, {
   urls: [""],           # Serve everything in the public folder
