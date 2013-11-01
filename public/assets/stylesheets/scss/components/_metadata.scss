@@ -11,13 +11,11 @@
   p {
     @extend %basepad;
     margin-bottom: 1em;
-
     a:link, a:visited,
     a:hover, a:active, {
       color: #fefefe;
       border-bottom: 1px dotted #bbb;
     }
-
   }
 
   h3 {
