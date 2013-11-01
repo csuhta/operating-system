@@ -14,7 +14,7 @@ use Rack::Static, {
     [:all, {
       "Cache-Control"    => "public, max-age=31536000",
       "X-Frame-Options"  => "DENY",
-      "X-XSS-Protection" =>	"1; mode=block",
+      "X-XSS-Protection" => "1; mode=block",
       "X-UA-Compatible"  => "IE=Edge",
     }]
   ]
