@@ -1,7 +1,10 @@
+require "rack-force_domain"
+
 STDOUT.sync = true
 
-use Rack::Deflater      # Use gzip
-use Rack::Head          # What does this do? :(
+use Rack::Deflater # Use gzip
+use Rack::Head # Answer HEAD requests
+use Rack::ForceDomain, ENV["EXPECTED_HOSTNAME"] # Force users onto the correct domain name
 
 use Rack::Static, {
   urls: [""],           # Serve everything in the public folder
@@ -9,7 +12,10 @@ use Rack::Static, {
   index: "index.html",  # Use the index.html convention
   header_rules: [
     [:all, {
-      "Cache-Control" => "public, max-age=31536000",
+      "Cache-Control"    => "public, max-age=31536000",
+      "X-Frame-Options"  => "DENY",
+      "X-XSS-Protection" =>	"1; mode=block",
+      "X-UA-Compatible"  => "IE=Edge",
     }]
   ]
 }
