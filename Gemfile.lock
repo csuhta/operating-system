@@ -7,6 +7,8 @@ GEM
     kgio (2.8.1)
     rack (1.5.2)
     rack-force_domain (0.2.0)
+    rack-server-pages (0.0.6)
+      rack
     raindrops (0.12.0)
     rb-fsevent (0.9.3)
     sass (3.2.12)
@@ -23,6 +25,7 @@ DEPENDENCIES
   bourbon
   rack
   rack-force_domain
+  rack-server-pages
   rb-fsevent
   sass
   unicorn

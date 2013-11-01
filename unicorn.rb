@@ -1,4 +1,8 @@
+STDOUT.sync = true
+STDERR.sync = true
+
 preload_app true
+listen ENV.fetch("PORT").to_i
 worker_processes ENV.fetch("UNICORN_PROCESSES").to_i
 timeout ENV.fetch("REQUEST_TIMEOUT").to_i
 

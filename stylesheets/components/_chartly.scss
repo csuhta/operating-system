@@ -47,6 +47,11 @@
     @extend %basepad;
     width: 80%;
     list-style: square outside;
+
+    strong {
+      font-weight: bold;
+    }
+
   }
 
   li + li {

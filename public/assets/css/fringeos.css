@@ -202,7 +202,7 @@ h1 {
     .metadata h3.joe {
       background-image: url(/assets/images/joe.jpg); }
     .metadata h3.amy {
-      background-image: url(/assets/images/joe.jpg); }
+      background-image: url(/assets/images/amy.jpg); }
 
 .showtimes {
   margin: 15px auto 15px auto; }
@@ -274,6 +274,8 @@ h1 {
   .chartly li {
     width: 80%;
     list-style: square outside; }
+    .chartly li strong {
+      font-weight: bold; }
   .chartly li + li {
     margin-top: 0.25em; }
   .chartly a, .chartly a:link, .chartly a:visited,
