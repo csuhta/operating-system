@@ -1,17 +1,18 @@
 # Ignore local dev only files
 
-vendor/*
-log/*
-tmp/**/*
-public/system/*
-coverage/
-spec/tmp/*
 .bundle
-db/*.sqlite3
-config/database.yml
 .env
+config/database.yml
+coverage/
+db/*.sqlite3
+log/*
+node_modules/*
+public/system/*
 rerun.txt
+spec/tmp/*
 tags
+tmp/**/*
+vendor/*
 vim/.netrwhist
 zeus.json
 
